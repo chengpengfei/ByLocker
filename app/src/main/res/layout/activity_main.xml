@@ -17,7 +17,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:padding="20dp"
-            android:text="此处放公司名称"
+            android:text="此处放公司名称-博阳"
             android:textSize="30sp" />
     </RelativeLayout>
 
@@ -54,31 +54,51 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal" >
+        android:layout_height="200dp"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal" >
 
-        <Button
-            android:id="@+id/main_lq_button"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="10"
-            android:onClick="lq_button_click"
-            android:text="领取" />
-        <Button
-            android:id="@+id/main_cc_button"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="10"
-            android:onClick="cc_button_click"
-            android:text="存储" />
+            <Button
+                android:id="@+id/main_lq_button"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_weight="10"
+                android:onClick="lq_button_click"
+                android:text="领取" />
+            <Button
+                android:id="@+id/main_cc_button"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_weight="10"
+                android:onClick="cc_button_click"
+                android:text="存储" />
 
-        <Button
-            android:id="@+id/main_gl_button"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_weight="10"
-            android:onClick="gl_button_click"
-            android:text="管理入口" />
+            <Button
+                android:id="@+id/main_gl_button"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_weight="10"
+                android:onClick="gl_button_click"
+                android:text="管理入口" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#5550" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="20dp"
+                android:text="此处放各类提示信息"
+                android:textSize="30sp" />
+        </RelativeLayout>
     </LinearLayout>
 
 
