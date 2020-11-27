@@ -51,7 +51,7 @@
                 android:id="@+id/gl_main_user_button"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:onClick="gl_main_sync_click"
+                android:onClick="gl_main_data_click"
                 android:text="查看已同步的用户"
                 android:textSize="30sp"/>
 
@@ -62,7 +62,7 @@
                 android:id="@+id/gl_main_sync_button"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:onClick="gl_confirm_click"
+                android:onClick="gl_main_sync_click"
                 android:text="同步数据"
                 android:textSize="30sp"/>
 
@@ -73,7 +73,7 @@
                 android:id="@+id/gl_main_host_button"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:onClick="pwd_confirm_click"
+                android:onClick="gl_main_host_click"
                 android:text="查看本机相关信息"
                 android:textSize="30sp"/>
             <View

@@ -37,7 +37,7 @@ public class GlMainActivity extends BaseActivity {
     }
 
 
-    public void  gl_main_sync_click(View view){
+    public void  gl_main_data_click(View view){
 
 
 
@@ -49,7 +49,7 @@ public class GlMainActivity extends BaseActivity {
 
     }
 
-    public void  gl_main_sync_click(View view){
+    public void  gl_main_host_click(View view){
 
 
 
