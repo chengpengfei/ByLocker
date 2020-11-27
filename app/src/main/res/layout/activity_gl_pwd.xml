@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#5550" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="20dp"
+            android:text="此处放返回按钮"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:background="#1000" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="20dp"
+            android:text="此处放图片"
+            android:textSize="30sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:background="#5550"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#8a8a8a"
+                android:text="请输入密码"
+                android:textSize="30sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#bfbfbf"
+                />
+            <com.boyangsoft.zhxf.bylocker.view.CustomPwdWidget
+                    android:id="@+id/pwdEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    passwordRadius="3dp"
+                    passwordColor="#8a8a8a"
+                    divisionLineSize="1dp"
+                    divisionLineColor="#8a8a8a"
+                    bgSize="1dp"
+                    bgColor="#D1D1D1"
+                    bgCorner="3dp"
+                    passwordNumber="4"
+                    isHide="false"
+                    android:background="@null" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#bfbfbf"
+                />
+            <Button
+                android:id="@+id/gl_pwd_confirm_button"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:onClick="pwd_confirm_click"
+                android:text="确定"
+                android:textSize="30sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
